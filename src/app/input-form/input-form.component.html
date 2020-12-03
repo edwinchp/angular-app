@@ -1,0 +1,23 @@
+<p>input-form works!</p>
+<br>
+
+
+<!--Create a button that displays an alert-->
+<button (click)="onClick()">Click to display an alert</button>
+
+<br><br><br>
+
+
+<!-- Create a button that displays the content within an input-->
+<input type="text" #input>
+<button (click)="onClickInput(input.value)" >Click here</button>
+
+<br><br><br>
+
+<!-- Sincronize input and header-->
+<h3>{{title}}</h3>
+<input type="text" #mamalonTitle (keyup)="onKeyUp(mamalonTitle.value)">
+<input type="text" (input)="inputEvent($event)">
+
+
+
